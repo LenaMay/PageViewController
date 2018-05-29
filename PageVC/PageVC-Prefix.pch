@@ -1,0 +1,17 @@
+//
+//  PageVC-Prefix.pch
+//  PageVC
+//
+//  Created by Lina on 2017/5/8.
+//  Copyright © 2017年 Lina. All rights reserved.
+//
+
+#ifndef PageVC_Prefix_pch
+#define PageVC_Prefix_pch
+
+#import "info.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PageVC_Prefix_pch */
