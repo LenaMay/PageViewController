@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1DB1BE20E9F57700AB67AA /* LNFingerLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1DB1BD20E9F57700AB67AA /* LNFingerLineView.m */; };
+		3E1DB1C120E9F6F800AB67AA /* LNFingerLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1DB1C020E9F6F800AB67AA /* LNFingerLineModel.m */; };
 		3E5206881E7242DE00AC0874 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5206871E7242DE00AC0874 /* test.swift */; };
 		3E5206901E72B83100AC0874 /* NBNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E52068F1E72B83100AC0874 /* NBNotificationView.m */; };
+		3E7933EB214F869D0055A180 /* UserLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7933EA214F869D0055A180 /* UserLayerViewController.m */; };
+		3E7933EE214F88120055A180 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7933ED214F88120055A180 /* QuartzCore.framework */; };
+		3E7933F0214F916A0055A180 /* ic_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E7933EF214F916A0055A180 /* ic_1024.png */; };
+		3E7933F4214F98500055A180 /* timg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E7933F3214F98500055A180 /* timg.jpg */; };
+		3E7933F8214F9BA20055A180 /* ic_renzheng@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E7933F7214F9BA20055A180 /* ic_renzheng@2x.png */; };
+		3E7933FA214F9BAB0055A180 /* ic_xueyuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E7933F9214F9BAB0055A180 /* ic_xueyuan@2x.png */; };
+		3E7933FC214F9C510055A180 /* ic_gold medal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E7933FB214F9C500055A180 /* ic_gold medal@2x.png */; };
+		3E8FDBAF20FF41E90035FACD /* LNZheZhaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8FDBAE20FF41E90035FACD /* LNZheZhaoViewController.m */; };
 		3E9747461CD1BFAE00C09BEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9747451CD1BFAE00C09BEA /* main.m */; };
 		3E9747491CD1BFAE00C09BEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9747481CD1BFAE00C09BEA /* AppDelegate.m */; };
 		3E97474C1CD1BFAE00C09BEA /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E97474B1CD1BFAE00C09BEA /* MasterViewController.m */; };
@@ -18,6 +28,12 @@
 		3E9747571CD1BFAE00C09BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9747551CD1BFAE00C09BEA /* LaunchScreen.storyboard */; };
 		3E9747621CD1BFAE00C09BEA /* PageVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9747611CD1BFAE00C09BEA /* PageVCTests.m */; };
 		3E97476D1CD1BFAE00C09BEA /* PageVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E97476C1CD1BFAE00C09BEA /* PageVCUITests.m */; };
+		3EA54F6A2153C8870093C94E /* ShiJueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA54F692153C8870093C94E /* ShiJueViewController.m */; };
+		3EC80C7F21D263F000C6B4CF /* TestCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */; };
+		3EDEAE5321512D22004E506E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5221512D22004E506E /* 1.png */; };
+		3EDEAE5721512D5D004E506E /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5421512D5C004E506E /* 4.png */; };
+		3EDEAE5821512D5D004E506E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5521512D5C004E506E /* 2.png */; };
+		3EDEAE5921512D5D004E506E /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5621512D5C004E506E /* 3.png */; };
 		3EE64D431EC054FB00FD06C5 /* ScanQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE64D421EC054FB00FD06C5 /* ScanQRViewController.m */; };
 		3EE64D531EC056EE00FD06C5 /* UIView+Animate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE64D491EC056EE00FD06C5 /* UIView+Animate.m */; };
 		3EE64D541EC056EE00FD06C5 /* UIView+Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE64D4B1EC056EE00FD06C5 /* UIView+Basic.m */; };
@@ -49,10 +65,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1DB1BC20E9F57700AB67AA /* LNFingerLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNFingerLineView.h; sourceTree = "<group>"; };
+		3E1DB1BD20E9F57700AB67AA /* LNFingerLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNFingerLineView.m; sourceTree = "<group>"; };
+		3E1DB1BF20E9F6F800AB67AA /* LNFingerLineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNFingerLineModel.h; sourceTree = "<group>"; };
+		3E1DB1C020E9F6F800AB67AA /* LNFingerLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNFingerLineModel.m; sourceTree = "<group>"; };
 		3E5206861E7242DE00AC0874 /* PageVC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PageVC-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E5206871E7242DE00AC0874 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		3E52068E1E72B83100AC0874 /* NBNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBNotificationView.h; sourceTree = "<group>"; };
 		3E52068F1E72B83100AC0874 /* NBNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBNotificationView.m; sourceTree = "<group>"; };
+		3E7933E9214F869D0055A180 /* UserLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserLayerViewController.h; sourceTree = "<group>"; };
+		3E7933EA214F869D0055A180 /* UserLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserLayerViewController.m; sourceTree = "<group>"; };
+		3E7933ED214F88120055A180 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3E7933EF214F916A0055A180 /* ic_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_1024.png; path = "../../Desktop/工作/ic_1024.png"; sourceTree = "<group>"; };
+		3E7933F3214F98500055A180 /* timg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = timg.jpg; path = ../../Downloads/timg.jpg; sourceTree = "<group>"; };
+		3E7933F5214F98600055A180 /* timg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpg; sourceTree = "<group>"; };
+		3E7933F6214F98640055A180 /* ic_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_1024.png; sourceTree = "<group>"; };
+		3E7933F7214F9BA20055A180 /* ic_renzheng@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_renzheng@2x.png"; path = "../../Desktop/工作/学员档案APP端/app学生档案优化开发者使用文件/assets/ic_renzheng@2x.png"; sourceTree = "<group>"; };
+		3E7933F9214F9BAB0055A180 /* ic_xueyuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_xueyuan@2x.png"; path = "../../Desktop/工作/学员档案APP端/app学生档案优化开发者使用文件/assets/ic_xueyuan@2x.png"; sourceTree = "<group>"; };
+		3E7933FB214F9C500055A180 /* ic_gold medal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_gold medal@2x.png"; path = "../../Desktop/工作/做作业功能/切图/ios/@2x/ic_gold medal@2x.png"; sourceTree = "<group>"; };
+		3E8FDBAD20FF41E90035FACD /* LNZheZhaoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNZheZhaoViewController.h; sourceTree = "<group>"; };
+		3E8FDBAE20FF41E90035FACD /* LNZheZhaoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNZheZhaoViewController.m; sourceTree = "<group>"; };
 		3E9747411CD1BFAD00C09BEA /* PageVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9747451CD1BFAE00C09BEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E9747471CD1BFAE00C09BEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +103,14 @@
 		3E9747681CD1BFAE00C09BEA /* PageVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E97476C1CD1BFAE00C09BEA /* PageVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageVCUITests.m; sourceTree = "<group>"; };
 		3E97476E1CD1BFAE00C09BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EA54F682153C8870093C94E /* ShiJueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiJueViewController.h; sourceTree = "<group>"; };
+		3EA54F692153C8870093C94E /* ShiJueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiJueViewController.m; sourceTree = "<group>"; };
+		3EC80C7D21D263F000C6B4CF /* TestCornerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCornerViewController.h; sourceTree = "<group>"; };
+		3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCornerViewController.m; sourceTree = "<group>"; };
+		3EDEAE5221512D22004E506E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		3EDEAE5421512D5C004E506E /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		3EDEAE5521512D5C004E506E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		3EDEAE5621512D5C004E506E /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		3EE64D401EC0447200FD06C5 /* info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = info.h; sourceTree = "<group>"; };
 		3EE64D411EC054FB00FD06C5 /* ScanQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRViewController.h; sourceTree = "<group>"; };
 		3EE64D421EC054FB00FD06C5 /* ScanQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRViewController.m; sourceTree = "<group>"; };
@@ -102,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7933EE214F88120055A180 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +163,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E1DB1BB20E9F51800AB67AA /* tuya */ = {
+			isa = PBXGroup;
+			children = (
+				3E1DB1BC20E9F57700AB67AA /* LNFingerLineView.h */,
+				3E1DB1BD20E9F57700AB67AA /* LNFingerLineView.m */,
+				3E1DB1BF20E9F6F800AB67AA /* LNFingerLineModel.h */,
+				3E1DB1C020E9F6F800AB67AA /* LNFingerLineModel.m */,
+			);
+			name = tuya;
+			sourceTree = "<group>";
+		};
+		3E7933E8214F864B0055A180 /* tuceng */ = {
+			isa = PBXGroup;
+			children = (
+				3E7933F5214F98600055A180 /* timg.jpg */,
+				3E7933E9214F869D0055A180 /* UserLayerViewController.h */,
+				3E7933EA214F869D0055A180 /* UserLayerViewController.m */,
+				3EDEAE5221512D22004E506E /* 1.png */,
+				3EDEAE5521512D5C004E506E /* 2.png */,
+				3EDEAE5621512D5C004E506E /* 3.png */,
+				3EDEAE5421512D5C004E506E /* 4.png */,
+				3E7933F7214F9BA20055A180 /* ic_renzheng@2x.png */,
+				3E7933FB214F9C500055A180 /* ic_gold medal@2x.png */,
+				3E7933F9214F9BAB0055A180 /* ic_xueyuan@2x.png */,
+				3E7933F6214F98640055A180 /* ic_1024.png */,
+			);
+			name = tuceng;
+			sourceTree = "<group>";
+		};
+		3E7933EC214F88110055A180 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E7933ED214F88120055A180 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E8FDBAC20FF41B80035FACD /* zhezhao */ = {
+			isa = PBXGroup;
+			children = (
+				3E8FDBAD20FF41E90035FACD /* LNZheZhaoViewController.h */,
+				3E8FDBAE20FF41E90035FACD /* LNZheZhaoViewController.m */,
+				3E7933F3214F98500055A180 /* timg.jpg */,
+				3E7933EF214F916A0055A180 /* ic_1024.png */,
+			);
+			name = zhezhao;
+			sourceTree = "<group>";
+		};
 		3E9747381CD1BFAD00C09BEA = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +218,7 @@
 				3E9747601CD1BFAE00C09BEA /* PageVCTests */,
 				3E97476B1CD1BFAE00C09BEA /* PageVCUITests */,
 				3E9747421CD1BFAD00C09BEA /* Products */,
+				3E7933EC214F88110055A180 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,11 +235,17 @@
 		3E9747431CD1BFAE00C09BEA /* PageVC */ = {
 			isa = PBXGroup;
 			children = (
+				3EA54F672153C8520093C94E /* shijuexiaoguo */,
+				3E7933E8214F864B0055A180 /* tuceng */,
+				3E8FDBAC20FF41B80035FACD /* zhezhao */,
+				3E1DB1BB20E9F51800AB67AA /* tuya */,
 				3E9747471CD1BFAE00C09BEA /* AppDelegate.h */,
 				3E9747481CD1BFAE00C09BEA /* AppDelegate.m */,
 				3EE64D451EC056B900FD06C5 /* base */,
 				3E97474A1CD1BFAE00C09BEA /* MasterViewController.h */,
 				3E97474B1CD1BFAE00C09BEA /* MasterViewController.m */,
+				3EC80C7D21D263F000C6B4CF /* TestCornerViewController.h */,
+				3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */,
 				3E97474D1CD1BFAE00C09BEA /* DetailViewController.h */,
 				3E97474E1CD1BFAE00C09BEA /* DetailViewController.m */,
 				3E52068E1E72B83100AC0874 /* NBNotificationView.h */,
@@ -193,6 +289,15 @@
 				3E97476E1CD1BFAE00C09BEA /* Info.plist */,
 			);
 			path = PageVCUITests;
+			sourceTree = "<group>";
+		};
+		3EA54F672153C8520093C94E /* shijuexiaoguo */ = {
+			isa = PBXGroup;
+			children = (
+				3EA54F682153C8870093C94E /* ShiJueViewController.h */,
+				3EA54F692153C8870093C94E /* ShiJueViewController.m */,
+			);
+			name = shijuexiaoguo;
 			sourceTree = "<group>";
 		};
 		3EE64D441EC0550700FD06C5 /* scanQR */ = {
@@ -305,7 +410,9 @@
 				TargetAttributes = {
 					3E9747401CD1BFAD00C09BEA = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5EMFG9Z439;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
 					};
 					3E97475C1CD1BFAE00C09BEA = {
 						CreatedOnToolsVersion = 7.3;
@@ -342,8 +449,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDEAE5821512D5D004E506E /* 2.png in Resources */,
+				3EDEAE5321512D22004E506E /* 1.png in Resources */,
+				3E7933F0214F916A0055A180 /* ic_1024.png in Resources */,
+				3EDEAE5921512D5D004E506E /* 3.png in Resources */,
+				3E7933F4214F98500055A180 /* timg.jpg in Resources */,
 				3E9747571CD1BFAE00C09BEA /* LaunchScreen.storyboard in Resources */,
+				3E7933F8214F9BA20055A180 /* ic_renzheng@2x.png in Resources */,
+				3E7933FA214F9BAB0055A180 /* ic_xueyuan@2x.png in Resources */,
+				3E7933FC214F9C510055A180 /* ic_gold medal@2x.png in Resources */,
 				3E9747541CD1BFAE00C09BEA /* Assets.xcassets in Resources */,
+				3EDEAE5721512D5D004E506E /* 4.png in Resources */,
 				3E9747521CD1BFAE00C09BEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,14 +486,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EE64D551EC056EE00FD06C5 /* UITextField+utils.m in Sources */,
+				3EC80C7F21D263F000C6B4CF /* TestCornerViewController.m in Sources */,
 				3EE64D601EC05C1800FD06C5 /* UIActionSheet+Blocks.m in Sources */,
+				3E8FDBAF20FF41E90035FACD /* LNZheZhaoViewController.m in Sources */,
 				3E9747491CD1BFAE00C09BEA /* AppDelegate.m in Sources */,
 				3EE64D561EC056EE00FD06C5 /* UITextView+utils.m in Sources */,
 				3E97474C1CD1BFAE00C09BEA /* MasterViewController.m in Sources */,
 				3EE64D571EC056EE00FD06C5 /* UITableViewCell+utils.m in Sources */,
 				3EE64D541EC056EE00FD06C5 /* UIView+Basic.m in Sources */,
 				3E9747461CD1BFAE00C09BEA /* main.m in Sources */,
+				3E7933EB214F869D0055A180 /* UserLayerViewController.m in Sources */,
+				3E1DB1C120E9F6F800AB67AA /* LNFingerLineModel.m in Sources */,
 				3E5206901E72B83100AC0874 /* NBNotificationView.m in Sources */,
+				3EA54F6A2153C8870093C94E /* ShiJueViewController.m in Sources */,
 				3EF940481FC696A9009054B2 /* ZLWebViewController.m in Sources */,
 				3E5206881E7242DE00AC0874 /* test.swift in Sources */,
 				3EE64D5A1EC0577200FD06C5 /* UIView+Extension.m in Sources */,
@@ -386,6 +507,7 @@
 				3EE64D431EC054FB00FD06C5 /* ScanQRViewController.m in Sources */,
 				3E97474F1CD1BFAE00C09BEA /* DetailViewController.m in Sources */,
 				3EE64D641EC05CF600FD06C5 /* NSString+utils.m in Sources */,
+				3E1DB1BE20E9F57700AB67AA /* LNFingerLineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,14 +652,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5EMFG9Z439;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PageVC/PageVC-Prefix.pch";
 				INFOPLIST_FILE = PageVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhanglina.PageVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baijiahulian.student;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = student_development;
 				SWIFT_OBJC_BRIDGING_HEADER = "PageVC/PageVC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -550,14 +674,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PageVC/PageVC-Prefix.pch";
 				INFOPLIST_FILE = PageVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhanglina.PageVC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.baijiahulian.student;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PageVC/PageVC-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
