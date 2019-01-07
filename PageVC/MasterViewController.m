@@ -13,6 +13,7 @@
 #import "UserLayerViewController.h"
 #import "ShiJueViewController.h"
 #import "TestCornerViewController.h"
+#import "NSArray+NOCrash.h"
 
 
 @interface MasterViewController ()
@@ -37,8 +38,9 @@
     NSLog(@"before=%@",array);
 
 
-    _objects = @[@"仿淘宝APP内弹消息窗口",@"扫描二维码",@"今日头条翻页",@"遮罩",@"图层树",@"视觉效果",@"圆角测试"];
+    _objects = @[@"仿淘宝APP内弹消息窗口",@"扫描二维码",@"今日头条翻页",@"遮罩",@"图层树",@"视觉效果",@"圆角测试",@"字典和数组 崩溃问题"];
 }
+
 
 - (void)viewWillAppear:(BOOL)animated {
     self.clearsSelectionOnViewWillAppear = self.splitViewController.isCollapsed;
@@ -137,6 +139,9 @@
         case 6:
             [self testCorner];
             break;
+        case 7:
+            [self testArrayCrash];
+            break;
             
         default:
             break;
@@ -172,6 +177,18 @@
 - (void)testCorner{
     TestCornerViewController *vc = [[TestCornerViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)testArrayCrash{
+    NSString *s = nil;
+    NSArray *array = @[@"43",@"wrq",s];
+    NSMutableArray *muarray = [NSMutableArray arrayWithObject:@"23"];
+    [muarray addObject:s];
+    NSString *str = [array objectAtIndex:2];
+    NSString *mustr = [muarray objectAtIndex:2];
+    NSLog(@"%@,%@",str,muarray);
+    //以上为数组的，字典同理l也可以是用runtime机制替换对应方法
+
 }
 
 

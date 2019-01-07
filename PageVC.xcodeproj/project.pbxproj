@@ -30,6 +30,7 @@
 		3E97476D1CD1BFAE00C09BEA /* PageVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E97476C1CD1BFAE00C09BEA /* PageVCUITests.m */; };
 		3EA54F6A2153C8870093C94E /* ShiJueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA54F692153C8870093C94E /* ShiJueViewController.m */; };
 		3EC80C7F21D263F000C6B4CF /* TestCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */; };
+		3ED38DF821DDB8B600DC131D /* NSArray+NOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED38DF721DDB8B600DC131D /* NSArray+NOCrash.m */; };
 		3EDEAE5321512D22004E506E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5221512D22004E506E /* 1.png */; };
 		3EDEAE5721512D5D004E506E /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5421512D5C004E506E /* 4.png */; };
 		3EDEAE5821512D5D004E506E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5521512D5C004E506E /* 2.png */; };
@@ -107,6 +108,8 @@
 		3EA54F692153C8870093C94E /* ShiJueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiJueViewController.m; sourceTree = "<group>"; };
 		3EC80C7D21D263F000C6B4CF /* TestCornerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCornerViewController.h; sourceTree = "<group>"; };
 		3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCornerViewController.m; sourceTree = "<group>"; };
+		3ED38DF621DDB8B600DC131D /* NSArray+NOCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+NOCrash.h"; sourceTree = "<group>"; };
+		3ED38DF721DDB8B600DC131D /* NSArray+NOCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NOCrash.m"; sourceTree = "<group>"; };
 		3EDEAE5221512D22004E506E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		3EDEAE5421512D5C004E506E /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		3EDEAE5521512D5C004E506E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -235,6 +238,7 @@
 		3E9747431CD1BFAE00C09BEA /* PageVC */ = {
 			isa = PBXGroup;
 			children = (
+				3ED38DF921DDB8C200DC131D /* NoCrashArrayAndDic */,
 				3EA54F672153C8520093C94E /* shijuexiaoguo */,
 				3E7933E8214F864B0055A180 /* tuceng */,
 				3E8FDBAC20FF41B80035FACD /* zhezhao */,
@@ -298,6 +302,15 @@
 				3EA54F692153C8870093C94E /* ShiJueViewController.m */,
 			);
 			name = shijuexiaoguo;
+			sourceTree = "<group>";
+		};
+		3ED38DF921DDB8C200DC131D /* NoCrashArrayAndDic */ = {
+			isa = PBXGroup;
+			children = (
+				3ED38DF621DDB8B600DC131D /* NSArray+NOCrash.h */,
+				3ED38DF721DDB8B600DC131D /* NSArray+NOCrash.m */,
+			);
+			name = NoCrashArrayAndDic;
 			sourceTree = "<group>";
 		};
 		3EE64D441EC0550700FD06C5 /* scanQR */ = {
@@ -498,6 +511,7 @@
 				3E7933EB214F869D0055A180 /* UserLayerViewController.m in Sources */,
 				3E1DB1C120E9F6F800AB67AA /* LNFingerLineModel.m in Sources */,
 				3E5206901E72B83100AC0874 /* NBNotificationView.m in Sources */,
+				3ED38DF821DDB8B600DC131D /* NSArray+NOCrash.m in Sources */,
 				3EA54F6A2153C8870093C94E /* ShiJueViewController.m in Sources */,
 				3EF940481FC696A9009054B2 /* ZLWebViewController.m in Sources */,
 				3E5206881E7242DE00AC0874 /* test.swift in Sources */,
