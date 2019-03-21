@@ -30,6 +30,8 @@
 		3E97476D1CD1BFAE00C09BEA /* PageVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E97476C1CD1BFAE00C09BEA /* PageVCUITests.m */; };
 		3EA54F6A2153C8870093C94E /* ShiJueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA54F692153C8870093C94E /* ShiJueViewController.m */; };
 		3EC80C7F21D263F000C6B4CF /* TestCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */; };
+		3ECBF7C32242348100B1BC79 /* MessageforWardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBF7C22242348100B1BC79 /* MessageforWardVC.m */; };
+		3ECBF7C62242405200B1BC79 /* UIResponder+messageforward.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECBF7C52242405200B1BC79 /* UIResponder+messageforward.m */; };
 		3ED38DF821DDB8B600DC131D /* NSArray+NOCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED38DF721DDB8B600DC131D /* NSArray+NOCrash.m */; };
 		3EDEAE5321512D22004E506E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5221512D22004E506E /* 1.png */; };
 		3EDEAE5721512D5D004E506E /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDEAE5421512D5C004E506E /* 4.png */; };
@@ -108,6 +110,10 @@
 		3EA54F692153C8870093C94E /* ShiJueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiJueViewController.m; sourceTree = "<group>"; };
 		3EC80C7D21D263F000C6B4CF /* TestCornerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCornerViewController.h; sourceTree = "<group>"; };
 		3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCornerViewController.m; sourceTree = "<group>"; };
+		3ECBF7C12242348100B1BC79 /* MessageforWardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageforWardVC.h; sourceTree = "<group>"; };
+		3ECBF7C22242348100B1BC79 /* MessageforWardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageforWardVC.m; sourceTree = "<group>"; };
+		3ECBF7C42242405200B1BC79 /* UIResponder+messageforward.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+messageforward.h"; sourceTree = "<group>"; };
+		3ECBF7C52242405200B1BC79 /* UIResponder+messageforward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+messageforward.m"; sourceTree = "<group>"; };
 		3ED38DF621DDB8B600DC131D /* NSArray+NOCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+NOCrash.h"; sourceTree = "<group>"; };
 		3ED38DF721DDB8B600DC131D /* NSArray+NOCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NOCrash.m"; sourceTree = "<group>"; };
 		3EDEAE5221512D22004E506E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
@@ -238,6 +244,7 @@
 		3E9747431CD1BFAE00C09BEA /* PageVC */ = {
 			isa = PBXGroup;
 			children = (
+				3ECBF7C0224233FF00B1BC79 /* test */,
 				3ED38DF921DDB8C200DC131D /* NoCrashArrayAndDic */,
 				3EA54F672153C8520093C94E /* shijuexiaoguo */,
 				3E7933E8214F864B0055A180 /* tuceng */,
@@ -248,8 +255,6 @@
 				3EE64D451EC056B900FD06C5 /* base */,
 				3E97474A1CD1BFAE00C09BEA /* MasterViewController.h */,
 				3E97474B1CD1BFAE00C09BEA /* MasterViewController.m */,
-				3EC80C7D21D263F000C6B4CF /* TestCornerViewController.h */,
-				3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */,
 				3E97474D1CD1BFAE00C09BEA /* DetailViewController.h */,
 				3E97474E1CD1BFAE00C09BEA /* DetailViewController.m */,
 				3E52068E1E72B83100AC0874 /* NBNotificationView.h */,
@@ -302,6 +307,19 @@
 				3EA54F692153C8870093C94E /* ShiJueViewController.m */,
 			);
 			name = shijuexiaoguo;
+			sourceTree = "<group>";
+		};
+		3ECBF7C0224233FF00B1BC79 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				3EC80C7D21D263F000C6B4CF /* TestCornerViewController.h */,
+				3EC80C7E21D263F000C6B4CF /* TestCornerViewController.m */,
+				3ECBF7C12242348100B1BC79 /* MessageforWardVC.h */,
+				3ECBF7C22242348100B1BC79 /* MessageforWardVC.m */,
+				3ECBF7C42242405200B1BC79 /* UIResponder+messageforward.h */,
+				3ECBF7C52242405200B1BC79 /* UIResponder+messageforward.m */,
+			);
+			name = test;
 			sourceTree = "<group>";
 		};
 		3ED38DF921DDB8C200DC131D /* NoCrashArrayAndDic */ = {
@@ -515,12 +533,14 @@
 				3EA54F6A2153C8870093C94E /* ShiJueViewController.m in Sources */,
 				3EF940481FC696A9009054B2 /* ZLWebViewController.m in Sources */,
 				3E5206881E7242DE00AC0874 /* test.swift in Sources */,
+				3ECBF7C62242405200B1BC79 /* UIResponder+messageforward.m in Sources */,
 				3EE64D5A1EC0577200FD06C5 /* UIView+Extension.m in Sources */,
 				3EE64D531EC056EE00FD06C5 /* UIView+Animate.m in Sources */,
 				3EE64D611EC05C1800FD06C5 /* UIAlertView+Block.m in Sources */,
 				3EE64D431EC054FB00FD06C5 /* ScanQRViewController.m in Sources */,
 				3E97474F1CD1BFAE00C09BEA /* DetailViewController.m in Sources */,
 				3EE64D641EC05CF600FD06C5 /* NSString+utils.m in Sources */,
+				3ECBF7C32242348100B1BC79 /* MessageforWardVC.m in Sources */,
 				3E1DB1BE20E9F57700AB67AA /* LNFingerLineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

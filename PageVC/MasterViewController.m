@@ -14,6 +14,7 @@
 #import "ShiJueViewController.h"
 #import "TestCornerViewController.h"
 #import "NSArray+NOCrash.h"
+#import "MessageforWardVC.h"
 
 
 @interface MasterViewController ()
@@ -38,7 +39,7 @@
     NSLog(@"before=%@",array);
 
 
-    _objects = @[@"仿淘宝APP内弹消息窗口",@"扫描二维码",@"今日头条翻页",@"遮罩",@"图层树",@"视觉效果",@"圆角测试",@"字典和数组 崩溃问题"];
+    _objects = @[@"仿淘宝APP内弹消息窗口",@"扫描二维码",@"今日头条翻页",@"遮罩",@"图层树",@"视觉效果",@"圆角测试",@"字典和数组 崩溃问题",@"理解消息转发机制"];
 }
 
 
@@ -143,6 +144,10 @@
             [self testArrayCrash];
             break;
             
+        case 8:
+            [self testMessageForward];
+            break;
+            
         default:
             break;
     }
@@ -188,8 +193,14 @@
     NSString *mustr = [muarray objectAtIndex:2];
     NSLog(@"%@,%@",str,muarray);
     //以上为数组的，字典同理l也可以是用runtime机制替换对应方法
-
+    
 }
+
+- (void)testMessageForward{
+    MessageforWardVC *vc = [[MessageforWardVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 
 @end
