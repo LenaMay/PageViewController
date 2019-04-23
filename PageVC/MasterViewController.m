@@ -15,6 +15,10 @@
 #import "TestCornerViewController.h"
 #import "NSArray+NOCrash.h"
 #import "MessageforWardVC.h"
+#import "WXApi.h"
+#import "WebPViewController.h"
+
+
 
 
 @interface MasterViewController ()
@@ -29,17 +33,19 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
-    id array = [[NSMutableArray alloc]init];
-    void ( ^blk)(void) = ^{
-        NSString *str = @"fdf";
-        [array addObject:str];
-    };
-    NSLog(@"after=%@",array);
-    blk();
-    NSLog(@"before=%@",array);
+//    [self testArrayCrash];
+//    [self test_block];
+//    return;
+//    [self testIsEquel];
+//    [self testBlockFanhuizhileixing];
+
+  
 
 
-    _objects = @[@"仿淘宝APP内弹消息窗口",@"扫描二维码",@"今日头条翻页",@"遮罩",@"图层树",@"视觉效果",@"圆角测试",@"字典和数组 崩溃问题",@"理解消息转发机制"];
+
+    _objects = @[@"仿淘宝APP内弹消息窗口",@"扫描二维码",@"今日头条翻页",@"遮罩",@"图层树",@"视觉效果",@"圆角测试",@"字典和数组 崩溃问题",@"理解消息转发机制",@"加载webp动态图"];
+    
+    
 }
 
 
@@ -147,6 +153,9 @@
         case 8:
             [self testMessageForward];
             break;
+        case 9:
+            [self testWebP];
+            break;
             
         default:
             break;
@@ -160,6 +169,10 @@
 }
 
 - (void)toScanQR{
+    
+
+    
+    
     ScanQRViewController *vc = [[ScanQRViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -184,6 +197,11 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)testWebP{
+    WebPViewController *vc = [[WebPViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)testArrayCrash{
     NSString *s = nil;
     NSArray *array = @[@"43",@"wrq",s];
@@ -201,6 +219,75 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+
+- (void)test_block{
+    
+    NSString *str1 = @"11111";
+    __weak  NSString *str2 = @"222222";
+    __block  NSString *str3 = @"33333";
+    
+    NSMutableString *mstr1 = [NSMutableString stringWithString:@"mmmmm1"];
+    __weak NSMutableString *mstr2 = [NSMutableString stringWithString:@"mmmmm2"];
+    __block NSMutableString *mstr3 = [NSMutableString stringWithString:@"mmmmm3"];
+    NSArray *array = @[@"123"];
+    void ( ^blk)(void) = ^{
+        //        str1 = @"block";
+        //        str2 = @"block";
+        str3 = @"block";
+        [mstr2 appendString:@"block"];
+        [mstr3 appendString:@"block"];
+         NSLog(@"array ==%@",array);
+        NSLog(@"str1 ==%@",str1);
+        NSLog(@"str2 ==%@",str2);
+        NSLog(@"str3 ==%@",str3);
+        NSLog(@"mstr1 ==%@",mstr1);
+        NSLog(@"mstr2 ==%@",mstr2);
+        NSLog(@"mstr3 ==%@",mstr3);
+    };
+
+    
+    blk();
+    str1 = @"str1变了";
+    str2 = @"str2变了";
+    str3 = @"str3变了";
+    mstr1 = [NSMutableString stringWithString:@"mmstr1\mmmm1"];
+//    [mstr1 appendString:@"mstr1变了"];
+    [mstr2 appendString:@"mstr2变了"];
+    [mstr3 appendString:@"mstr3变了"];
+    array = @[@"4.5.6"];
+    blk();
+
+}
+
+- (void)testIsEquel{
+    ShiJueViewController *vc = [[ShiJueViewController alloc]init];
+    ShiJueViewController *vc1 = [[ShiJueViewController alloc]init];
+    NSArray *a = @[@1];
+    NSArray *b = a;
+    NSArray *c = @[@1];
+    if (a==b) {NSLog(@"a ==b");} //YES
+    if (a==c) {NSLog(@"a==c");} //NO
+    if ([a isEqual:b]) {NSLog(@"a isEqual: b");} //YES
+    if ([a isEqual:c]) {NSLog(@"a isEqual: c");}//YES
+    if ([vc isEqual:vc1]) {NSLog(@"vc isEqual: vc1");}//NO
+    // == 指针相同      重写“isEqual”方法就是提供自定义的相等标准
+}
+
+- (void)testBlockFanhuizhileixing{
+    //正确
+    id  s  =   ^(int i){
+        return @"3355";
+    };
+    
+    //错误
+//    id  s1  =   ^(int i){
+//        if (i==1) {
+//            return @"3355";
+//        }else{
+//            return @(2);
+//        }
+//    };
+}
 
 
 @end

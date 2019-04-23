@@ -23,8 +23,13 @@
 //    }
 //    return [super resolveInstanceMethod:sel];
 //}
-//
-//- (void)nameSetMethod:(NSString*)str{
-//    NSLog(@"哈哈2222%@",str);
-//}
+
+- (void)nameSetMethod:(NSString*)str{
+    NSLog(@"哈哈2222%@",str);
+}
+
+-(void)forwardInvocation:(NSInvocation *)invocation{
+    NSLog(@"哈哈2222");
+}
+
 @end

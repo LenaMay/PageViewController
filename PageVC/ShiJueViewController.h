@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ShiJueViewController : UIViewController
+@property (nonatomic, strong)NSString *name;
+@property (nonatomic, strong)NSString *name1;
+@property (nonatomic, strong)NSString *name2;
+
+
 
 @end

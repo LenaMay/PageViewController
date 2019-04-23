@@ -64,9 +64,15 @@
 }
 
 - (void)clock{
+    
+  
 //    if (_backView) {
 //        [_backView removeFromSuperview];
 //    }
+    UISplitViewController *spli = (UISplitViewController *)[[[UIApplication sharedApplication] keyWindow] rootViewController];
+    UINavigationController *na = spli.viewControllers.lastObject;
+    
+    
     UIImage *image = [UIImage imageNamed:@"1"];
     _clockView   = [[UIView alloc]initWithFrame:CGRectMake(50, 120, 300, 300)];
     _clockView.layer.contents = (__bridge id) [image CGImage];
@@ -98,6 +104,9 @@
 }
 
 - (void)trick{
+    UserLayerViewController *vc = [[UserLayerViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+    return;
     
     NSCalendar *ca = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierChinese];
     NSUInteger units = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;

@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "NBNotificationView.h"
+#import "WebPViewController.h"
 
 @interface DetailViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -103,6 +104,10 @@
 
 }
 - (void)hideBtnAction:(UIButton *)sender{
+    WebPViewController *vc = [[WebPViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    return;
     [NBNotificationView hideWithCompletion:^{
         
     }];

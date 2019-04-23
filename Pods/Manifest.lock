@@ -1,0 +1,37 @@
+PODS:
+  - Masonry (1.1.0)
+  - WechatOpenSDK (1.8.4)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - Masonry (~> 1.1.0)
+  - WechatOpenSDK
+  - YYImage/WebP
+  - YYWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - WechatOpenSDK
+    - YYCache
+    - YYImage
+    - YYWebImage
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: d91644f53228c6b0c84bb0ca3a8a3019f633ce5d
+
+COCOAPODS: 1.6.1

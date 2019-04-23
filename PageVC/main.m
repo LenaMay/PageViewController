@@ -10,6 +10,14 @@
 #import "AppDelegate.h"
 
 int main(int argc, char * argv[]) {
+    
+    NSString * str= @"hahahah";
+    void  (^blk)(void) = ^{
+        NSLog(@"5354%@",str);
+    };
+    str = @"4543545";
+    blk();
+    
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

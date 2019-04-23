@@ -30,7 +30,6 @@
 
 
 
-
 //+(BOOL)resolveInstanceMethod:(SEL)sel{
 //    SEL aSel = NSSelectorFromString(@"nameSetMethod:");
 //    Method aMethod = class_getInstanceMethod(self, aSel);
