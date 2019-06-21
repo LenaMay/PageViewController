@@ -8,16 +8,18 @@
 
 #import "WebPViewController.h"
 #import "UserLayerViewController.h"
-//#import <Lottie/Lottie.h>
+#import <Lottie/Lottie.h>
 #import "NSDate+Category.h"
-#import "LOTAnimatedControl.h"
-#import "LOTComposition.h"
-#import "LOTAnimationView.h"
 
 
-
-@interface WebPViewController ()
+@interface WebPViewController ()<UIScrollViewDelegate>
+{
+    LOTPointInterpolatorCallback *_positionInterpolator;
+    LOTAnimationView *_boatLoader;
+    NSInteger _currentIndex;
+}
 @property (nonatomic, strong) YYAnimatedImageView *imageView;
+@property (nonatomic, strong) NSMutableArray *array;
 @end
 
 @implementation WebPViewController
@@ -116,14 +118,116 @@
 }
 
 - (void)play:(UIButton *)sender{
-    [_imageView startAnimating];
-//    if (!sender.isSelected) {
-//        [_imageView startAnimating];
-//    }else{
-//        [_imageView stopAnimating];
-//    }
-//    sender.selected = !sender.isSelected;
+//    [_imageView startAnimating];
+    // Create Boat Animation
+    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:self.view.bounds];
+    [scrollView setBackgroundColor:[UIColor whiteColor]];
+    scrollView.pagingEnabled = YES;
+    scrollView.delegate = self;
+    scrollView.contentSize = CGSizeMake(DEVICE_SCREEN_WIDTH * 3, self.view.size.height);
+    [self.view addSubview:scrollView];
+    _array = [NSMutableArray array];
+    for (int i = 0; i<3; i++) {
+        LOTAnimationView *load = [LOTAnimationView animationNamed:[NSString stringWithFormat:@"data%d",i+1]];
+        load.tag = 888+i;
+        [load setFrame:CGRectMake(i*DEVICE_SCREEN_WIDTH, 0, self.view.size.width, self.view.size.height)];
+        load.loopAnimation = NO;
+        [scrollView addSubview:load];
+        [_array addObject:load];
+    }
+    _currentIndex =0;
+    LOTAnimationView *load = [_array objectAtIndex:_currentIndex];
+    [self playAni:load];
+    
 }
+
+- (void)playAni:(LOTAnimationView *)load {
+    weakifyself
+    if (_currentIndex == 0) {
+        [load playToFrame:@(37) withCompletion:^(BOOL animationFinished) {
+            strongifyself
+            [self updateLoop];
+            
+        }];
+    }else if(_currentIndex == 1){
+//        [load playToProgress:1 withCompletion:^(BOOL animationFinished) {
+//            strongifyself
+////            [self updateLoop];
+//        }];
+       [load playToFrame:@(37) withCompletion:^(BOOL animationFinished) {
+            strongifyself
+            [self updateLoop];
+
+        }];
+    }
+    else if(_currentIndex == 2){
+//        [load playToProgress:0.6 withCompletion:^(BOOL animationFinished) {
+//            strongifyself
+//            [self updateLoop];
+//        }];
+        [load playToFrame:@(30) withCompletion:^(BOOL animationFinished) {
+            strongifyself
+            [self updateLoop];
+
+        }];
+    }
+   
+}
+
+- (void)updateLoop{
+    LOTAnimationView *load = [_array objectAtIndex:_currentIndex];
+    if (_currentIndex == 0) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //通知主线程刷新
+            load.loopAnimation = YES;
+            load.autoReverseAnimation  = YES;
+            [load playFromFrame:@(37) toFrame:@(67) withCompletion:^(BOOL animationFinished) {
+                
+            }];
+        });
+    }else if(_currentIndex == 1){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //通知主线程刷新
+            load.loopAnimation = YES;
+            load.autoReverseAnimation  = YES;
+//            [load playFromProgress:0.6 toProgress:0.9 withCompletion:^(BOOL animationFinished) {
+//
+//            }];
+            
+            [load playFromFrame:@(37) toFrame:@(66) withCompletion:^(BOOL animationFinished) {
+
+            }];
+        });
+    }else if(_currentIndex == 2){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //通知主线程刷新
+            load.loopAnimation = YES;
+            load.autoReverseAnimation  = YES;
+//            [load playFromProgress:0.6 toProgress:0.9 withCompletion:^(BOOL animationFinished) {
+//
+//            }];
+            [load playFromFrame:@(30) toFrame:@(57) withCompletion:^(BOOL animationFinished) {
+
+            }];
+        });
+    }
+    
+   
+   
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    NSInteger index = scrollView.contentOffset.x/DEVICE_SCREEN_WIDTH;
+    _currentIndex = index;
+    LOTAnimationView *load = [_array objectAtIndex:index];
+    if (load.isAnimationPlaying) {
+
+    }else{
+         [self playAni:load];
+    }
+   
+}
+
 
 /*
 #pragma mark - Navigation

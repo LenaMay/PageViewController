@@ -82,4 +82,6 @@
 #import "UITextView+utils.h"
 #import "UITextField+utils.h"
 #import "UITableViewCell+utils.h"
+#import <Masonry/Masonry.h>
+
 #endif /* info_h */

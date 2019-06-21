@@ -17,6 +17,8 @@
 #import "MessageforWardVC.h"
 #import "WXApi.h"
 #import "WebPViewController.h"
+#import "CollectionViewController.h"
+
 
 
 
@@ -38,12 +40,26 @@
 //    return;
 //    [self testIsEquel];
 //    [self testBlockFanhuizhileixing];
+    NSString *datea = @"2019-12-34 22:33:11";
+    NSDateFormatter *fomatter = [[NSDateFormatter alloc]init];
+    [fomatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *date  = [NSDate new];
+    [fomatter setDateFormat:@"M月d日"];
+    
+    NSString *str1 = [fomatter stringFromDate:date];
+    
+    NSString *str2 = [fomatter stringFromDate:date];
 
+//    if([fomatter stringFromDate:date] && [fomatter stringFromDate:date].length > 0){
+//        return [fomatter stringFromDate:date];
+//    }else{
+//        return @"";
+//    }
   
 
 
 
-    _objects = @[@"仿淘宝APP内弹消息窗口",@"扫描二维码",@"今日头条翻页",@"遮罩",@"图层树",@"视觉效果",@"圆角测试",@"字典和数组 崩溃问题",@"理解消息转发机制",@"加载webp动态 和json 动图"];
+    _objects = @[@"仿淘宝APP内弹消息窗口",@"扫描二维码",@"今日头条翻页",@"遮罩",@"图层树",@"视觉效果",@"圆角测试",@"字典和数组 崩溃问题",@"理解消息转发机制",@"加载webp动态 和json 动图",@"collectionView使用"];
     
     
 }
@@ -156,6 +172,9 @@
         case 9:
             [self testWebP];
             break;
+        case 10:
+            [self testCollectionView];
+            break;
             
         default:
             break;
@@ -216,6 +235,11 @@
 
 - (void)testMessageForward{
     MessageforWardVC *vc = [[MessageforWardVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)testCollectionView{
+    CollectionViewController *vc = [[CollectionViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B150840BCF8F541B55AD75F3CDF4D9D7"
+               BlueprintIdentifier = "F41E188DA378AD2DABCD4AD85C654D97"
                BuildableName = "libPods-PageVC.a"
                BlueprintName = "Pods-PageVC"
                ReferencedContainer = "container:Pods.xcodeproj">

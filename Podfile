@@ -5,5 +5,5 @@ pod 'Masonry', '~>1.1.0'
 pod ‘WechatOpenSDK'
 pod 'YYWebImage'
 pod 'YYImage/WebP'
-#pod 'lottie-ios', '2.1.5'
+pod 'lottie-ios', '2.5.3'
 end
